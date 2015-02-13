@@ -1,0 +1,45 @@
+package awel;
+
+
+
+import org.ini4j.Profile;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+
+public class Twitter  {
+    public static void main(String[] args) {
+        // Create a new instance of the html unit driver
+        // Notice that the remainder of the code relies on the interface, 
+        // not the implementation.
+        WebDriver driver = new HtmlUnitDriver() ;
+
+        // And now use this to visit Google
+        driver.get("https://twitter.com/elbaradei");
+
+        // Find the text input element by its name
+       // WebElement element = driver.findElement(By.id("email"));
+
+        // Enter something to search for
+       // element.sendKeys("ahmedshalash114@yahoo.com");
+       // WebElement element2 = driver.findElement(By.id("pass"));
+       // element2.sendKeys("");
+        // Now submit the form. WebDriver will find the form for us from the element
+        ///element.submit();
+       // WebElement element3 = driver.findElement(By.id("loginbutton"));
+       // element3.submit();
+        //System.out.println(element);
+        
+   // 
+        // Check the title of the page
+        System.out.println("Page title is: " + driver.getTitle());
+        WebElement element4 = driver.findElement(By.cssSelector("div"));
+        System.out.println(element4.getText());
+
+        driver.quit();
+    }
+}
+
