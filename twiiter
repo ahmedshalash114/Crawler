@@ -24,7 +24,7 @@ public class Twitter  {
        // WebElement element = driver.findElement(By.id("email"));
 
         // Enter something to search for
-       // element.sendKeys("ahmedshalash114@yahoo.com");
+       
        // WebElement element2 = driver.findElement(By.id("pass"));
        // element2.sendKeys("");
         // Now submit the form. WebDriver will find the form for us from the element
